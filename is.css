@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #111;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.heart{
+    height: 70px;
+    width: 70px;
+    background-color: black;
+    position: relative;
+    transform: rotate(-45deg);
+    box-shadow: -10px 20px 50px black;
+    animation:he 1s linear infinite ;
+    left: 35%;
+    z-index: 9;
+}
+.heart::before{
+    height: 70px;
+    width: 70px;
+    background-color:black;
+    top: -50%;
+    position: absolute;
+    content: '';
+    border-radius: 50px;
+    animation:he 1s linear infinite ;
+    
+    
+}
+.heart::after{
+    height: 70px;
+    width: 70px;
+    background-color:black;
+    right: -50%;
+    position: absolute;
+    content: '';
+    border-radius: 50px;
+    animation:he 1s linear infinite ;   
+    
+}
+@keyframes he{
+    0%{
+        transform: rotate(-45deg) scale(1.09);
+        
+
+    }
+    80%{
+        transform: rotate(-45deg) scale(1.0);
+       
+
+
+    }
+    100%{
+        transform: rotate(-45deg) scale(1.02);
+        
+
+
+    }
+}
+.circle{
+    height: 300px;
+    width: 300px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 2px solid skyblue;
+    animation: cir 2s linear infinite;
+    position: relative;
+    left:20%
+ 
+
+}
+@keyframes cir{
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360);
+        background-color: skyblue;
+        transition: 2s;
+    }
+}
+.square{
+    height: 500px;
+    width: 500px;
+    background-color:goldenrod;
+    position: relative;
+    z-index: -1;
+    left: -15%;
+    animation:squ 1s linear infinite ;
+   
+}
+@keyframes squ{
+    0%{
+        background-color: aquamarine;
+    }
+    10%{
+        background-color: brown;
+    }
+    20%{
+        background-color: cornflowerblue;
+    }
+    30%{
+        background-color:chartreuse;
+    }
+    40%{
+        background-color: rosybrown;
+    }
+    50%{
+        background-color:chocolate;
+    }
+
+    
+}
+@keyframes he{
+    0%{
+        background-color: aquamarine;
+    }
+    10%{
+        background-color: brown;
+    }
+    20%{
+        background-color: cornflowerblue;
+    }
+    30%{
+        background-color:chartreuse;
+    }
+    40%{
+        background-color: rosybrown;
+    }
+    50%{
+        background-color:chocolate;
+    }
+
+    
+}
+@media screen (max-width: 768px){
+
+    .circle {
+        height: 300px;
+        width: 300px;
+       
+    }
+}

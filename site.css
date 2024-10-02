@@ -1,0 +1,51 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #111;
+
+}
+
+.a {
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    animation: crc 5s infinite;
+    position: relative;
+}
+
+@keyframes crc {
+    0% {
+        top: 0px;
+        left: 0px;
+        background-color: red;
+    }
+
+    25% {
+        top: 0px;
+        left: 1070px;
+        background-color: aqua;
+    }
+
+    50% {
+        top: 430px;
+        left: 1040px;
+        background-color: blueviolet;
+    }
+
+    75% {
+        top: 450px;
+        left: 0px;
+        background-color: burlywood;
+    }
+
+    100% {
+        top: 0px;
+        left: 0px;
+        background-color: darkmagenta;
+    }
+}
